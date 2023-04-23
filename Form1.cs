@@ -56,5 +56,22 @@ namespace paint
                 g.FillEllipse(sb, e.X, e.Y, trackBar1.Value, trackBar1.Value);
             }
         }
+
+        private void button_erase_Click(object sender, EventArgs e)
+        {
+            sb.Color = Color.White;
+        }
+
+        private void button_pencil_Click(object sender, EventArgs e)
+        {
+            sb.Color = panel2.BackColor;
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            panel1.BackColor = sb.Color;
+        }
+
+     
     }
 }
